@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From the Kitchen • Antlers of Hope Bar & Grill</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Source+Sans+3:wght@400;500;600&display=swap');
+        
+        :root {
+            --charcoal: #1A1F24;
+            --barn-wood: #3C2F2F;
+            --amber: #C68E42;
+            --cream: #F4EDE3;
+        }
+        
+        body {
+            font-family: 'Source Sans 3', system_ui, sans-serif;
+        }
+        
+        .western-heading {
+            font-family: 'Playfair Display', Georgia, serif;
+            letter-spacing: -0.02em;
+        }
+
+        .section-heading {
+            font-family: 'Playfair Display', Georgia, serif;
+            letter-spacing: -0.01em;
+        }
+
+        .food-card {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .food-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+
+        .nav-scrolled {
+            background-color: rgba(26, 31, 36, 0.96);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-[#1A1F24] text-[#F4EDE3]">
+
+    <!-- NAV -->
+    <nav id="nav" class="fixed top-0 left-0 right-0 z-50 bg-[#1A1F24]/95 border-b border-white/10 transition-all duration-300">
+        <div class="max-w-screen-2xl mx-auto">
+            <div class="flex items-center justify-between px-6 lg:px-10 h-20">
+                <div class="flex items-center gap-x-3">
+                    <div class="flex items-center gap-x-2.5">
+                        <svg width="32" height="32" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-[#C68E42]">
+                            <path d="M14 12 L14 28 Q14 34 20 34" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M34 12 L34 28 Q34 34 28 34" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                            <circle cx="24" cy="36" r="4" fill="#C68E42"/>
+                        </svg>
+                        <div>
+                            <div class="font-bold text-xl tracking-[-1px] text-white western-heading">ANTLERS OF HOPE</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-x-4">
+                    <a href="index.html" class="text-sm font-medium text-[#F4EDE3]/90 hover:text-white px-4 py-2">BACK TO HOME</a>
+                    <a href="index.html#visit" class="western-btn bg-[#C68E42] hover:bg-[#D4A017] text-[#1A1F24] px-6 py-2.5 text-xs font-semibold tracking-[1.5px] rounded-sm">VISIT US</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <div class="pt-20 relative h-[60vh] min-h-[420px] flex items-center justify-center bg-black">
+        <div class="absolute inset-0">
+            <img src="images/food-tri-tip-burger.jpg" class="w-full h-full object-cover opacity-75" alt="Signature Tri-Tip Burger">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/70 to-[#1A1F24]"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6">
+            <div class="text-[#C68E42] uppercase tracking-[4px] text-sm mb-3">MADE WITH HEART ON THE 190</div>
+            <h1 class="western-heading text-7xl md:text-8xl tracking-[-3px] text-white">From the Kitchen</h1>
+            <p class="max-w-md mx-auto mt-4 text-[#F4EDE3]/90 text-lg">Hearty, honest food made fresh for people who work hard and gather harder.</p>
+        </div>
+    </div>
+
+    <!-- APPETIZERS -->
+    <section class="max-w-screen-2xl mx-auto px-6 lg:px-10 pt-16 pb-12">
+        <div class="flex items-end justify-between mb-8">
+            <div>
+                <div class="text-[#C68E42] uppercase tracking-[3px] text-sm">START HERE</div>
+                <h2 class="section-heading text-5xl tracking-[-1.5px]">Appetizers &amp; Sides</h2>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <div class="food-card bg-[#242A30] border border-white/10 rounded-sm overflow-hidden">
+                <img src="images/food-nachos.jpg" class="w-full h-64 object-cover" alt="Loaded Nachos">
+                <div class="p-6">
+                    <div class="flex justify-between items-baseline">
+                        <div class="font-semibold text-2xl">Nachos</div>
+                        <div class="font-mono text-[#C68E42] text-lg">$5 / $8</div>
+                    </div>
+                    <p class="text-[#CFC4B3] mt-3">Cheese with chips. Or loaded with your choice of chicken, ground beef or tri-tip, cabbage, onions, tomatoes, cilantro and pico de gallo.</p>
+                </div>
+            </div>
+
+            <div class="food-card bg-[#242A30] border border-white/10 rounded-sm overflow-hidden">
+                <img src="images/food-wings.jpg" class="w-full h-64 object-cover" alt="Chicken Wings">
+                <div class="p-6">
+                    <div class="flex justify-between items-baseline">
+                        <div class="font-semibold text-2xl">Wings (6pc)</div>
+                        <div class="font-mono text-[#C68E42] text-lg">$5</div>
+                    </div>
+                    <p class="text-[#CFC4B3] mt-3">Crispy wings tossed in your choice of BBQ, Buffalo, Mango Habanero, or Garlic Parmesan. Served with celery and ranch.</p>
+                </div>
+            </div>
+
+            <div class="food-card bg-[#242A30] border border-white/10 rounded-sm overflow-hidden">
+                <img src="images/food-quesadilla.jpg" class="w-full h-64 object-cover" alt="Quesadilla">
+                <div class="p-6">
+                    <div class="flex justify-between items-baseline">
+                        <div class="font-semibold text-2xl">Quesadilla</div>
+                        <div class="font-mono text-[#C68E42] text-lg">$7</div>
+                    </div>
+                    <p class="text-[#CFC4B3] mt-3">Golden toasted tortilla filled with melted shredded cheese and your choice of chicken, ground beef or tri-tip.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BURGERS -->
+    <section class="max-w-screen-2xl mx-auto px-6 lg:px-10 py-12 bg-[#161A1F]">
+        <div class="flex items-end justify-between mb-8">
+            <div>
+                <div class="text-[#C68E42] uppercase tracking-[3px] text-sm">THE MAIN EVENT</div>
+                <h2 class="section-heading text-5xl tracking-[-1.5px]">Burgers</h2>
+            </div>
+            <p class="hidden md:block text-[#D9D0C3] max-w-xs text-sm">All burgers are 1/3 lb beef patties served with your choice of chips or potato salad.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <div class="food-card bg-[#242A30] border border-white/10 rounded-sm overflow-hidden">
+                <img src="images/food-cheeseburger.jpg" class="w-full h-72 object-cover" alt="Classic Cheeseburger">
+                <div class="p-6">
+                    <div class="flex justify-between items-baseline">
+                        <div class="font-semibold text-2xl">Cheeseburger</div>
+                        <div class="font-mono text-[#C68E42] text-lg">$10</div>
+                    </div>
+                    <p class="text-[#CFC4B3] mt-3">Classic 1/3 lb patty with American cheese, mayo, mustard, ketchup, lettuce, tomato, pickles and onion.</p>
+                </div>
+            </div>
+
+            <div class="food-card bg-[#242A30] border border-white/10 rounded-sm overflow-hidden">
+                <img src="images/food-oklahoma-burger.jpg" class="w-full h-72 object-cover" alt="Oklahoma Burger">
+                <div class="p-6">
+                    <div class="flex justify-between items-baseline">
+                        <div class="font-semibold text-2xl">Oklahoma Burger</div>
+                        <div class="font-mono text-[#C68E42] text-lg">$12</div>
+                    </div>
+                    <p class="text-[#CFC4B3] mt-3">1/3 lb patty with melted cheese and caramelized grilled onions, finished with our signature Antler sauce.</p>
+                </div>
+            </div>
+
+            <div class="food-card bg-[#242A30] border border-white/10 rounded-sm overflow-hidden">
+                <img src="images/food-texas-burger.jpg" class="w-full h-72 object-cover" alt="Texas Burger">
+                <div class="p-6">
+                    <div class="flex justify-between items-baseline">
+                        <div class="font-semibold text-2xl">Texas Burger</div>
+                        <div class="font-mono text-[#C68E42] text-lg">$14</div>
+                    </div>
+                    <p class="text-[#CFC4B3] mt-3">Bold and spicy. 1/3 lb patty with grilled onions, BBQ sauce, fresh jalapeño and Antler sauce.</p>
+                </div>
+            </div>
+
+            <div class="food-card bg-[#242A30] border border-white/10 rounded-sm overflow-hidden">
+                <img src="images/food-tri-tip-burger.jpg" class="w-full h-72 object-cover" alt="Tri-Tip Burger">
+                <div class="p-6">
+                    <div class="flex justify-between items-baseline">
+                        <div class="font-semibold text-2xl">Tri-Tip Burger</div>
+                        <div class="font-mono text-[#C68E42] text-lg">$15</div>
+                    </div>
+                    <p class="text-[#CFC4B3] mt-3">Our signature. Beef patty layered with hickory-smoked tri-tip, melted cheese, hot honey and BBQ sauce.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SANDWICHES & TACOS -->
+    <section class="max-w-screen-2xl mx-auto px-6 lg:px-10 py-16">
+        <div class="grid lg:grid-cols-2 gap-12">
+            
+            <!-- Sandwiches -->
+            <div>
+                <div class="mb-8">
+                    <div class="text-[#C68E42] uppercase tracking-[3px] text-sm">BETWEEN BREAD</div>
+                    <h2 class="section-heading text-5xl tracking-[-1.5px]">Sandwiches</h2>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="food-card bg-[#242A30] border border-white/10 rounded-sm overflow-hidden flex">
+                        <img src="images/food-tri-tip-sandwich.jpg" class="w-2/5 object-cover" alt="Tri-Tip Sandwich">
+                        <div class="p-6 flex-1">
+                            <div class="flex justify-between">
+                                <div class="font-semibold text-2xl">Tri-Tip Sandwich</div>
+                                <div class="font-mono text-[#C68E42] text-lg">$13</div>
+                            </div>
+                            <p class="text-[#CFC4B3] mt-3">Hickory smoked tri-tip on a hoagie roll with BBQ sauce, garlic butter and grilled onions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tacos -->
+            <div>
+                <div class="mb-8">
+                    <div class="text-[#C68E42] uppercase tracking-[3px] text-sm">STREET STYLE</div>
+                    <h2 class="section-heading text-5xl tracking-[-1.5px]">Tacos</h2>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="food-card bg-[#242A30] border border-white/10 rounded-sm overflow-hidden flex">
+                        <img src="images/food-tacos.jpg" class="w-2/5 object-cover" alt="Tacos">
+                        <div class="p-6 flex-1">
+                            <div class="flex justify-between">
+                                <div class="font-semibold text-2xl">Tacos</div>
+                                <div class="font-mono text-[#C68E42] text-lg">$3 each</div>
+                            </div>
+                            <p class="text-[#CFC4B3] mt-3">Your choice of tri-tip, ground beef or chicken on corn tortillas with cabbage, cilantro and our homemade smoked salsa.</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card bg-[#242A30] border border-white/10 rounded-sm overflow-hidden flex">
+                        <img src="images/food-fish-tacos.jpg" class="w-2/5 object-cover" alt="Fish Tacos">
+                        <div class="p-6 flex-1">
+                            <div class="flex justify-between">
+                                <div class="font-semibold text-2xl">Fish or Shrimp Tacos</div>
+                                <div class="font-mono text-[#C68E42] text-lg">$4 each</div>
+                            </div>
+                            <p class="text-[#CFC4B3] mt-3">Beer-battered cod with cabbage, cilantro, pico de gallo, smoked salsa and our special Antler sauce.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="border-t border-white/10 py-12 bg-[#161A1F]">
+        <div class="max-w-screen-2xl mx-auto px-6 text-center">
+            <p class="text-[#C68E42] tracking-[3px] text-sm">PULL UP A STOOL</p>
+            <h3 class="western-heading text-4xl mt-3 tracking-tight">Come try it for yourself.</h3>
+            <div class="mt-8">
+                <a href="index.html#visit" class="western-btn inline-block bg-[#C68E42] hover:bg-[#D4A017] text-[#1A1F24] px-10 py-4 text-sm font-semibold tracking-[2px] rounded">PLAN YOUR VISIT</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-black text-[#F4EDE3]/70 text-xs py-8 border-t border-white/10">
+        <div class="max-w-screen-2xl mx-auto px-6 lg:px-10 text-center">
+            © Antlers of HOPE Inc. • 30990 Highway 190, Porterville, CA
+        </div>
+    </footer>
+
+    <script>
+        // Simple navbar scroll effect
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 80) {
+                nav.classList.add('nav-scrolled');
+            } else {
+                nav.classList.remove('nav-scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
