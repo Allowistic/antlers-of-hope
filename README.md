@@ -2,8 +2,10 @@
 
 A high-fidelity static website prototype for **Antlers of Hope Bar & Grill** on Highway 190 in Porterville, California.
 
-**Live Preview (once GitHub Pages is enabled):**  
+**Live Preview:**  
 https://allowistic.github.io/antlers-of-hope/
+
+**Current Status:** Clean review version (restored June 2026)
 
 ---
 
