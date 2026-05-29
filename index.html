@@ -498,106 +498,171 @@
         <!-- Menu Tabs -->
         <div class="flex border-b border-white/15 mb-8">
             <button onclick="filterMenu('all')" class="menu-tab active px-7 py-3 text-sm font-medium tracking-wide border-b-2 border-[#C68E42] text-white" id="tab-all">ALL</button>
+            <button onclick="filterMenu('appetizers')" class="menu-tab px-7 py-3 text-sm font-medium tracking-wide text-[#F4EDE3]/80 hover:text-white" id="tab-appetizers">APPETIZERS &amp; SIDES</button>
             <button onclick="filterMenu('burgers')" class="menu-tab px-7 py-3 text-sm font-medium tracking-wide text-[#F4EDE3]/80 hover:text-white" id="tab-burgers">BURGERS</button>
-            <button onclick="filterMenu('shareables')" class="menu-tab px-7 py-3 text-sm font-medium tracking-wide text-[#F4EDE3]/80 hover:text-white" id="tab-shareables">SHAREABLES</button>
-            <button onclick="filterMenu('mains')" class="menu-tab px-7 py-3 text-sm font-medium tracking-wide text-[#F4EDE3]/80 hover:text-white" id="tab-mains">MAINS &amp; PLATES</button>
-            <button onclick="filterMenu('specials')" class="menu-tab px-7 py-3 text-sm font-medium tracking-wide text-[#F4EDE3]/80 hover:text-white" id="tab-specials">ROTATING SPECIALS</button>
+            <button onclick="filterMenu('sandwiches')" class="menu-tab px-7 py-3 text-sm font-medium tracking-wide text-[#F4EDE3]/80 hover:text-white" id="tab-sandwiches">SANDWICHES</button>
+            <button onclick="filterMenu('tacos')" class="menu-tab px-7 py-3 text-sm font-medium tracking-wide text-[#F4EDE3]/80 hover:text-white" id="tab-tacos">TACOS</button>
         </div>
         
         <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-5 gap-y-6" id="menu-grid">
-            
+
+            <!-- Appetizers / Sides -->
+            <div class="menu-card menu-item bg-[#242A30] border border-white/10 p-6 rounded-sm food-item" data-category="appetizers">
+                <div class="flex justify-between items-start mb-2">
+                    <div>
+                        <div class="font-semibold tracking-tight text-lg">Nachos</div>
+                        <div class="text-xs text-[#C68E42] mt-0.5">Cheese or loaded</div>
+                    </div>
+                    <div class="font-mono text-sm text-[#C68E42] font-medium">$5 / $8</div>
+                </div>
+                <p class="text-sm text-[#CFC4B3]">Cheese with chips. Chicken, Ground Beef or Tri-tip with cabbage, onions, tomatoes, cilantro &amp; pico de gallo.</p>
+            </div>
+
+            <div class="menu-card menu-item bg-[#242A30] border border-white/10 p-6 rounded-sm food-item" data-category="appetizers">
+                <div class="flex justify-between items-start mb-2">
+                    <div class="font-semibold tracking-tight text-lg">Wings (6pc)</div>
+                </div>
+                <p class="text-sm text-[#CFC4B3]">Choice of BBQ, Buffalo, Mango Habanero or Garlic Parmesan. Served with celery &amp; ranch.</p>
+            </div>
+
+            <div class="menu-card menu-item bg-[#242A30] border border-white/10 p-6 rounded-sm food-item" data-category="appetizers">
+                <div class="flex justify-between items-start mb-2">
+                    <div class="font-semibold tracking-tight text-lg">Antler Fries</div>
+                    <div class="font-mono text-sm text-[#C68E42] font-medium">$12</div>
+                </div>
+                <p class="text-sm text-[#CFC4B3]">Fries, cheese sauce, sautéed onions, grilled jalapeño, Antler sauce &amp; hot honey. Choice of tri-tip or chicken.</p>
+            </div>
+
+            <div class="menu-card menu-item bg-[#242A30] border border-white/10 p-6 rounded-sm food-item" data-category="appetizers">
+                <div class="flex justify-between items-start mb-2">
+                    <div class="font-semibold tracking-tight text-lg">3 Sliders</div>
+                    <div class="font-mono text-sm text-[#C68E42] font-medium">$10</div>
+                </div>
+                <p class="text-sm text-[#CFC4B3]">Choice of tri-tip or ground beef topped with grilled onions and Antler sauce.</p>
+            </div>
+
+            <div class="menu-card menu-item bg-[#242A30] border border-white/10 p-6 rounded-sm food-item" data-category="appetizers">
+                <div class="flex justify-between items-start mb-2">
+                    <div class="font-semibold tracking-tight text-lg">Quesadilla</div>
+                    <div class="font-mono text-sm text-[#C68E42] font-medium">$7</div>
+                </div>
+                <p class="text-sm text-[#CFC4B3]">Shredded cheese with choice of chicken, ground beef or tri-tip.</p>
+            </div>
+
+            <div class="menu-card menu-item bg-[#242A30] border border-white/10 p-6 rounded-sm food-item" data-category="appetizers">
+                <div class="flex justify-between items-start mb-2">
+                    <div class="font-semibold tracking-tight text-lg">Garlic Fries or Onion Rings</div>
+                    <div class="font-mono text-sm text-[#C68E42] font-medium">$6</div>
+                </div>
+                <p class="text-sm text-[#CFC4B3]">Golden garlic fries or thick-cut onion rings with ranch.</p>
+            </div>
+
             <!-- Burgers -->
             <div class="menu-card menu-item bg-[#242A30] border border-white/10 p-6 rounded-sm food-item" data-category="burgers">
                 <div class="flex justify-between items-start mb-2">
                     <div>
-                        <div class="font-semibold tracking-tight text-lg">Triple Jalapeño Bacon Cheeseburger</div>
-                        <div class="text-xs text-[#C68E42] mt-0.5">Our signature</div>
+                        <div class="font-semibold tracking-tight text-lg">Cheeseburger</div>
                     </div>
-                    <div class="font-mono text-sm text-[#C68E42] font-medium">$14</div>
+                    <div class="font-mono text-sm text-[#C68E42] font-medium">$10</div>
                 </div>
-                <p class="text-sm text-[#CFC4B3]">Three jalapeños, thick bacon, pepper jack, caramelized onions, lettuce, tomato. Served with crispy fries.</p>
+                <p class="text-sm text-[#CFC4B3]">1/3 lb beef patty with cheese, mayo, mustard, ketchup, lettuce, tomato, pickles &amp; onion. Choice of chips or potato salad.</p>
             </div>
-            
+
             <div class="menu-card menu-item bg-[#242A30] border border-white/10 p-6 rounded-sm food-item" data-category="burgers">
                 <div class="flex justify-between items-start mb-2">
-                    <div class="font-semibold tracking-tight text-lg">Classic Bar & Grill Burger</div>
+                    <div class="font-semibold tracking-tight text-lg">Oklahoma Burger</div>
                     <div class="font-mono text-sm text-[#C68E42] font-medium">$12</div>
                 </div>
-                <p class="text-sm text-[#CFC4B3]">Beef patty, American cheese, pickles, onion, special sauce. The one the locals order.</p>
+                <p class="text-sm text-[#CFC4B3]">1/3 lb beef patty with cheese &amp; grilled onions, Antler sauce, lettuce, tomato &amp; pickles. Choice of chips or potato salad.</p>
             </div>
-            
-            <!-- Shareables -->
-            <div class="menu-card menu-item bg-[#242A30] border border-white/10 p-6 rounded-sm food-item" data-category="shareables">
+
+            <div class="menu-card menu-item bg-[#242A30] border border-white/10 p-6 rounded-sm food-item" data-category="burgers">
                 <div class="flex justify-between items-start mb-2">
-                    <div class="font-semibold tracking-tight text-lg">Tri-Tip Nachos</div>
+                    <div class="font-semibold tracking-tight text-lg">Texas Burger</div>
                     <div class="font-mono text-sm text-[#C68E42] font-medium">$14</div>
                 </div>
-                <p class="text-sm text-[#CFC4B3]">Fresh chips, melted cheese, house-smoked tri-tip, pico, jalapeños, crema. Feeds two hungry travelers.</p>
+                <p class="text-sm text-[#CFC4B3]">1/3 lb beef patty with cheese, grilled onions, BBQ sauce &amp; jalapeño, Antler sauce, lettuce, tomato &amp; pickles.</p>
             </div>
-            
-            <div class="menu-card menu-item bg-[#242A30] border border-white/10 p-6 rounded-sm food-item" data-category="shareables">
+
+            <div class="menu-card menu-item bg-[#242A30] border border-white/10 p-6 rounded-sm food-item" data-category="burgers">
                 <div class="flex justify-between items-start mb-2">
-                    <div class="font-semibold tracking-tight text-lg">Jalapeño Poppers</div>
-                    <div class="font-mono text-sm text-[#C68E42] font-medium">$9</div>
-                </div>
-                <p class="text-sm text-[#CFC4B3]">Cream cheese stuffed, hand-breaded, served with ranch. Don’t fight over the last one.</p>
-            </div>
-            
-            <div class="menu-card menu-item bg-[#242A30] border border-white/10 p-6 rounded-sm food-item" data-category="shareables">
-                <div class="flex justify-between items-start mb-2">
-                    <div class="font-semibold tracking-tight text-lg">Onion Rings + Wings Combo</div>
-                    <div class="font-mono text-sm text-[#C68E42] font-medium">$13</div>
-                </div>
-                <p class="text-sm text-[#CFC4B3]">Thick-cut rings and a dozen wings — choose your heat. Perfect with a cold one.</p>
-            </div>
-            
-            <!-- Mains -->
-            <div class="menu-card menu-item bg-[#242A30] border border-white/10 p-6 rounded-sm food-item" data-category="mains">
-                <div class="flex justify-between items-start mb-2">
-                    <div class="font-semibold tracking-tight text-lg">Chicken Fried Steak</div>
-                    <div class="font-mono text-sm text-[#C68E42] font-medium">$16</div>
-                </div>
-                <p class="text-sm text-[#CFC4B3]">Hand-breaded, country gravy, mashed potatoes, green beans. Straight out of the foothills.</p>
-            </div>
-            
-            <div class="menu-card menu-item bg-[#242A30] border border-white/10 p-6 rounded-sm food-item" data-category="mains">
-                <div class="flex justify-between items-start mb-2">
-                    <div class="font-semibold tracking-tight text-lg">Fish &amp; Chips</div>
+                    <div class="font-semibold tracking-tight text-lg">Tri-Tip Burger</div>
                     <div class="font-mono text-sm text-[#C68E42] font-medium">$15</div>
                 </div>
-                <p class="text-sm text-[#CFC4B3]">Crispy cod, tartar, lemon, thick-cut fries. The 190’s favorite Friday lunch.</p>
+                <p class="text-sm text-[#CFC4B3]">1/3 lb beef patty layered with hickory smoked tri-tip, cheese, hot honey &amp; BBQ sauce.</p>
             </div>
-            
-            <!-- Specials -->
-            <div class="menu-card menu-item bg-[#242A30] border border-white/10 p-6 rounded-sm food-item" data-category="specials">
+
+            <div class="menu-card menu-item bg-[#242A30] border border-white/10 p-6 rounded-sm food-item" data-category="burgers">
                 <div class="flex justify-between items-start mb-2">
-                    <div>
-                        <div class="font-semibold tracking-tight text-lg">Friday Steak Night</div>
-                        <div class="text-[#C68E42] text-xs">First Friday of the month</div>
-                    </div>
-                    <div class="font-mono text-sm text-[#C68E42] font-medium">$22</div>
+                    <div class="font-semibold tracking-tight text-lg">Mushroom Swiss Burger</div>
+                    <div class="font-mono text-sm text-[#C68E42] font-medium">$15</div>
                 </div>
-                <p class="text-sm text-[#CFC4B3]">Ribeye or New York, baked potato, creamed corn, house salad. Limited. Come early.</p>
+                <p class="text-sm text-[#CFC4B3]">1/3 lb beef patty with sautéed mushrooms, Swiss cheese &amp; sautéed onions. Choice of chips or potato salad.</p>
             </div>
-            
-            <div class="menu-card menu-item bg-[#242A30] border border-white/10 p-6 rounded-sm food-item" data-category="specials">
+
+            <!-- Sandwiches -->
+            <div class="menu-card menu-item bg-[#242A30] border border-white/10 p-6 rounded-sm food-item" data-category="sandwiches">
                 <div class="flex justify-between items-start mb-2">
-                    <div class="font-semibold tracking-tight text-lg">Clam Chowder (Bowl)</div>
-                    <div class="font-mono text-sm text-[#C68E42] font-medium">$8</div>
+                    <div class="font-semibold tracking-tight text-lg">Tri-Tip Sandwich</div>
+                    <div class="font-mono text-sm text-[#C68E42] font-medium">$13</div>
                 </div>
-                <p class="text-sm text-[#CFC4B3]">Rich, thick, loaded with clams and potatoes. A rotating winter favorite.</p>
+                <p class="text-sm text-[#CFC4B3]">Hickory smoked tri-tip on hoagie roll with BBQ sauce, garlic butter &amp; grilled onions. Choice of chips or potato salad.</p>
             </div>
-            
-            <div class="menu-card menu-item bg-[#242A30] border border-white/10 p-6 rounded-sm food-item" data-category="specials">
+
+            <div class="menu-card menu-item bg-[#242A30] border border-white/10 p-6 rounded-sm food-item" data-category="sandwiches">
                 <div class="flex justify-between items-start mb-2">
-                    <div class="font-semibold tracking-tight text-lg">Corned Beef &amp; Cabbage</div>
-                    <div class="font-mono text-sm text-[#C68E42] font-medium">$11</div>
+                    <div class="font-semibold tracking-tight text-lg">Spicy Chicken Sandwich</div>
+                    <div class="font-mono text-sm text-[#C68E42] font-medium">$12</div>
                 </div>
-                <p class="text-sm text-[#CFC4B3]">Slow-cooked, served with potatoes and carrots. Ask when it’s on — it goes fast.</p>
+                <p class="text-sm text-[#CFC4B3]">Fried chicken breast, lettuce and spicy jalapeño ranch. Choice of chips or potato salad.</p>
             </div>
+
+            <!-- Tacos -->
+            <div class="menu-card menu-item bg-[#242A30] border border-white/10 p-6 rounded-sm food-item" data-category="tacos">
+                <div class="flex justify-between items-start mb-2">
+                    <div class="font-semibold tracking-tight text-lg">Tacos</div>
+                    <div class="font-mono text-sm text-[#C68E42] font-medium">$3 each</div>
+                </div>
+                <p class="text-sm text-[#CFC4B3]">Tri-tip, ground beef or chicken on corn tortilla with cabbage, cilantro &amp; homemade smoked salsa.</p>
+            </div>
+
+            <div class="menu-card menu-item bg-[#242A30] border border-white/10 p-6 rounded-sm food-item" data-category="tacos">
+                <div class="flex justify-between items-start mb-2">
+                    <div class="font-semibold tracking-tight text-lg">Fish or Shrimp Tacos</div>
+                    <div class="font-mono text-sm text-[#C68E42] font-medium">$4 each</div>
+                </div>
+                <p class="text-sm text-[#CFC4B3]">Beer battered cod on flour tortilla with cabbage, cilantro, pico de gallo, smoked salsa &amp; Antlers special sauce.</p>
+            </div>
+
         </div>
-        
-        <div class="mt-8 text-center text-xs text-white/50 tracking-wider">Menu items and prices subject to change. Ask about today’s specials and vegetarian options.</div>
+
+        <div class="mt-8 text-center text-xs text-white/50 tracking-wider">
+            Upgrade any burger or sandwich with fries, onion rings or mushrooms for +$1 • Menu items &amp; prices subject to change
+        </div>
+
+        <!-- Signature Food Photos -->
+        <div class="mt-12">
+            <div class="text-center mb-6">
+                <div class="text-[#C68E42] uppercase tracking-[3.5px] text-xs">FROM THE KITCHEN</div>
+                <h3 class="section-heading text-4xl tracking-[-1.5px] text-white mt-1">Signature Dishes</h3>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                <div class="overflow-hidden rounded-sm border border-white/10">
+                    <img src="images/food-tri-tip-burger.jpg" class="w-full h-full object-cover aspect-[4/3]" alt="Tri-Tip Burger - hickory smoked tri-tip layered on a beef patty with hot honey and BBQ sauce">
+                </div>
+                <div class="overflow-hidden rounded-sm border border-white/10">
+                    <img src="images/food-nachos.jpg" class="w-full h-full object-cover aspect-[4/3]" alt="Loaded Nachos with tri-tip, melted cheese, cabbage, pico de gallo and fresh cilantro">
+                </div>
+                <div class="overflow-hidden rounded-sm border border-white/10">
+                    <img src="images/food-tri-tip-sandwich.jpg" class="w-full h-full object-cover aspect-[4/3]" alt="Hickory smoked Tri-Tip Sandwich on a hoagie roll with grilled onions and BBQ sauce">
+                </div>
+                <div class="overflow-hidden rounded-sm border border-white/10">
+                    <img src="images/food-tacos.jpg" class="w-full h-full object-cover aspect-[4/3]" alt="Street-style tacos with tri-tip, ground beef and chicken, cabbage and smoked salsa">
+                </div>
+            </div>
+            <p class="text-center text-xs text-white/50 mt-3 tracking-wider">More food photos coming soon • All dishes made fresh to order</p>
+        </div>
     </section>
 
     <!-- LIVE MUSIC & EVENTS -->
